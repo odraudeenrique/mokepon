@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Press+Start+2P&display=swap');
+
+body{
+    color:#541690;
+    background-color:#F9F9F9;
+    font-family: 'Contrail One', cursive;
+    font-size:17px;
+}
+
+.seleccionDeMascota{
+    color:#5B98EF;  
+    display:flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo{
+    color:#FF4949;
+    font-family: 'Press Start 2P', cursive;
+    font-size:50px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subtitulo{
+    color:#FF8D29;
+    font-family: 'Contrail One', cursive;
+    font-size:30px;
+    display:flex;
+}
+input{
+    display:none;
+}
+input:checked + label {
+    background-color:#FFF56D;
+}
+
+.tarjetas{
+    display:flex;
+    gap:10px;
+}
+.tarjetas-de-mokepon{
+    width:200px;
+    height:120px;
+    padding:10px; 
+    border:1px solid #FFCD38;
+    border-radius:20px;
+    box-sizing:border-box;
+    color:#541690;
+    background-color:#FFCD38;
+    margin:10px;
+    display:flex; 
+    align-items: center;
+    justify-content: space-evenly;  
+}
+.tarjetas-de-mokepon img{
+    width:90px;
+    height:90px;
+}
+#boton-mascota{
+    width:145px;
+    height:40px;
+    color:#541690;
+    background-color:transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:10px;
+    border:2px solid #FF4949;
+    border-radius:20px;
+    font-family: 'Contrail One', cursive;
+    font-size:medium;
+}
+#Seleccionar-ataque {  
+    align-items: center;
+    flex-direction: column;    
+}   
+.botones-de-ataque{
+    display:flex;
+} 
+.boton-de-ataque{
+    display:flex;
+    border-radius:20px;
+    border:2px solid #FF4949;
+    box-sizing:border-box;
+    background-color:#FFCD38;
+    width:90px;
+    height:50px;
+    margin:15px;
+    font-family: 'Contrail One', cursive;
+    color:#541690;
+    align-items: center;
+    justify-content: center;
+    font-size:medium;
+
+}
+#mensajes{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:200px;
+    padding:20px;
+    border-radius:20px;
+    background-color:#FDFDBD;
+}
+#boton-reinicio{
+    color:#541690;
+    background-color:transparent;
+    margin:10px;
+    border:2px transparent;
+    border-radius:20px;
+    font-family: 'Contrail One', cursive;
+    font-size:15px;
+
+}
+.ataques{
+    display:grid;
+    grid-template-columns: 250px 250px;
+    background-color:transparent;
+    margin:10px;    
+    border-radius:20px;
+}
+.ataque-y-vidas-jugador, .ataque-y-vidas-enemigo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+#ver-mapa button{
+    width:80px;
+    height:35px;
+    color:#541690;
+    background-color:transparent;
+    margin:5px 2px;
+    border:2px solid #FF4949;
+    border-radius:20px;
+    font-family: 'Contrail One', cursive;
+    font-size:medium;
+}
+
+
+@media (max-width:660px) {
+    .tarjetas,.botones-de-ataque {
+        flex-direction:column;
+    }
+    .titulo{
+        font-size:34px;
+    }
+    .subtitulo{
+        display:flex;
+        align-items:center;
+        font-size:19px;
+    }
+    
+}  
+
+@media (max-width:300px) {
+    #ver-mapa div {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .titulo{
+        font-size:30px;
+    }
+    .subtitulo{
+        display:flex;
+        align-items:center;
+        font-size:17px;
+    }
+}    
